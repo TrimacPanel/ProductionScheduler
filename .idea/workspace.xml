@@ -82,6 +82,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub Repos\ProductionScheduler\src\view" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -136,7 +141,7 @@
       <method />
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="MAIN_CLASS_NAME" value="model.Main" />
       <module name="ProductionScheduler" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -207,30 +212,30 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="273" y="333" key="FileChooserDialogImpl/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408955907" />
-    <state width="2173" height="332" key="GridCell.Tab.0.bottom" timestamp="1575408983139">
+    <state width="1074" height="326" key="GridCell.Tab.0.bottom" timestamp="1575416050002">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2173" height="332" key="GridCell.Tab.0.bottom/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408983139" />
-    <state width="2173" height="332" key="GridCell.Tab.0.center" timestamp="1575408983139">
+    <state width="1074" height="326" key="GridCell.Tab.0.bottom/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575416050002" />
+    <state width="1074" height="326" key="GridCell.Tab.0.center" timestamp="1575416050002">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2173" height="332" key="GridCell.Tab.0.center/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408983139" />
-    <state width="2173" height="332" key="GridCell.Tab.0.left" timestamp="1575408983139">
+    <state width="1074" height="326" key="GridCell.Tab.0.center/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575416050002" />
+    <state width="1074" height="326" key="GridCell.Tab.0.left" timestamp="1575416050002">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2173" height="332" key="GridCell.Tab.0.left/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408983139" />
-    <state width="2173" height="332" key="GridCell.Tab.0.right" timestamp="1575408983139">
+    <state width="1074" height="326" key="GridCell.Tab.0.left/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575416050002" />
+    <state width="1074" height="326" key="GridCell.Tab.0.right" timestamp="1575416050002">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2173" height="332" key="GridCell.Tab.0.right/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408983139" />
+    <state width="1074" height="326" key="GridCell.Tab.0.right/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575416050002" />
     <state x="50" y="166" key="SettingsEditor" timestamp="1575408726442">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="50" y="166" key="SettingsEditor/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408726442" />
-    <state x="793" y="421" key="com.intellij.ide.util.TipDialog" timestamp="1575408324334">
+    <state x="793" y="421" key="com.intellij.ide.util.TipDialog" timestamp="1575414545158">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="793" y="421" key="com.intellij.ide.util.TipDialog/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408324334" />
+    <state x="793" y="421" key="com.intellij.ide.util.TipDialog/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575414545158" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
