@@ -51,6 +51,13 @@
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -74,12 +81,13 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/SceneBuilder/SceneBuilder.exe" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/sqljdbc-7.4/mssql-jdbc-7.4.1.jre11.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
@@ -204,38 +212,57 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="873" y="358" key="#Project_Structure" timestamp="1575489489810">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="873" y="358" key="#Project_Structure/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575489489810" />
     <state x="24" y="101" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575408908818">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="24" y="101" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408908818" />
-    <state x="273" y="333" key="FileChooserDialogImpl" timestamp="1575408955907">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state x="1086" y="384" key="#com.intellij.ide.util.MemberChooser" timestamp="1575565113889">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1086" y="384" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575565113889" />
+    <state x="961" y="428" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575488872937">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="961" y="428" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575488872937" />
+    <state x="675" y="417" key="FileChooserDialogImpl" timestamp="1575565998235">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="273" y="333" key="FileChooserDialogImpl/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408955907" />
-    <state width="1074" height="326" key="GridCell.Tab.0.bottom" timestamp="1575416050002">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state x="675" y="417" key="FileChooserDialogImpl/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575565998235" />
+    <state width="1269" height="400" key="GridCell.Tab.0.bottom" timestamp="1575569370171">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1074" height="326" key="GridCell.Tab.0.bottom/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575416050002" />
-    <state width="1074" height="326" key="GridCell.Tab.0.center" timestamp="1575416050002">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state width="1269" height="400" key="GridCell.Tab.0.bottom/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575569370171" />
+    <state width="1269" height="400" key="GridCell.Tab.0.center" timestamp="1575569370170">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1074" height="326" key="GridCell.Tab.0.center/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575416050002" />
-    <state width="1074" height="326" key="GridCell.Tab.0.left" timestamp="1575416050002">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state width="1269" height="400" key="GridCell.Tab.0.center/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575569370170" />
+    <state width="1269" height="400" key="GridCell.Tab.0.left" timestamp="1575569370170">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1074" height="326" key="GridCell.Tab.0.left/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575416050002" />
-    <state width="1074" height="326" key="GridCell.Tab.0.right" timestamp="1575416050002">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state width="1269" height="400" key="GridCell.Tab.0.left/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575569370170" />
+    <state width="1269" height="400" key="GridCell.Tab.0.right" timestamp="1575569370171">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1074" height="326" key="GridCell.Tab.0.right/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575416050002" />
-    <state x="50" y="166" key="SettingsEditor" timestamp="1575408726442">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state width="1269" height="400" key="GridCell.Tab.0.right/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575569370171" />
+    <state x="58" y="195" key="SettingsEditor" timestamp="1575566018174">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="50" y="166" key="SettingsEditor/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575408726442" />
-    <state x="793" y="421" key="com.intellij.ide.util.TipDialog" timestamp="1575414545158">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state x="58" y="195" key="SettingsEditor/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575566018174" />
+    <state x="925" y="494" key="com.intellij.ide.util.TipDialog" timestamp="1575561918264">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="793" y="421" key="com.intellij.ide.util.TipDialog/-1920.0.1536.808/0.0.2194.1194@0.0.2194.1194" timestamp="1575414545158" />
+    <state x="925" y="494" key="com.intellij.ide.util.TipDialog/-1920.0.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1575561918264" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

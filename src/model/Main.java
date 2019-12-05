@@ -18,6 +18,9 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+         //TODO Load Open Work Orders
+        //TODO Do a comparison between Macola and current Data, and add new work orders
+        ProductionSchedule productionSchedule = new ProductionSchedule();
         launch(args);
     }
 }

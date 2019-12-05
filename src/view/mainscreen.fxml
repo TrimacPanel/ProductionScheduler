@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainScreenController">
    <children>
       <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -25,7 +25,7 @@
                           <menus>
                             <Menu mnemonicParsing="false" text="File">
                               <items>
-                                <MenuItem mnemonicParsing="false" text="Close" />
+                                <MenuItem mnemonicParsing="false" onAction="#onActionFileMenuClose" text="Close" />
                               </items>
                             </Menu>
                             <Menu mnemonicParsing="false" text="Edit">
@@ -44,7 +44,7 @@
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Button mnemonicParsing="false">
+                        <Button mnemonicParsing="false" onAction="#onActionRefreshButton" onKeyPressed="#onKeyPressRefreshButton">
                            <graphic>
                               <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -60,22 +60,22 @@
                   </HBox>
                </children>
             </VBox>
-            <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+            <TableView fx:id="prodSchTableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
               <columns>
-                <TableColumn prefWidth="60.0" resizable="false" style="-fx-font-size: 11;" text="LINE" />
-                <TableColumn prefWidth="60.0" resizable="false" style="-fx-font-size: 11;" text="SCH" />
-                  <TableColumn prefWidth="40.0" resizable="false" style="-fx-font-size: 11;" text="SEQ" />
-                  <TableColumn prefWidth="60.0" resizable="false" style="-fx-font-size: 11;" text="DUE" />
-                  <TableColumn prefWidth="50.0" resizable="false" style="-fx-font-size: 11;" text="WO #" />
-                  <TableColumn prefWidth="125.0" resizable="false" style="-fx-font-size: 11;" text="MACOLA REFERENCE" />
-                  <TableColumn prefWidth="45.0" resizable="false" style="-fx-font-size: 11;" text="QTY" />
-                  <TableColumn prefWidth="100.0" resizable="false" style="-fx-font-size: 11;" text="FINISHED SKU" />
-                  <TableColumn prefWidth="150.0" resizable="false" style="-fx-font-size: 11;" text="ITEM DESCRIPTION" />
-                  <TableColumn prefWidth="75.0" resizable="false" style="-fx-font-size: 11;" text="RAW SKU" />
-                  <TableColumn prefWidth="75.0" resizable="false" style="-fx-font-size: 11;" text="FILM SKU" />
-                  <TableColumn prefWidth="40.0" resizable="false" style="-fx-font-size: 11;" text="FACES" />
-                  <TableColumn prefWidth="50.0" resizable="false" style="-fx-font-size: 11;" text="# UNITS" />
-                  <TableColumn prefWidth="40.0" resizable="false" style="-fx-font-size: 11;" text="PC CT" />
+                <TableColumn fx:id="prodLineCol" prefWidth="60.0" resizable="false" style="-fx-font-size: 11;" text="LINE" />
+                <TableColumn fx:id="schDateCol" prefWidth="60.0" resizable="false" style="-fx-font-size: 11;" text="SCH" />
+                  <TableColumn fx:id="seqCol" prefWidth="40.0" resizable="false" style="-fx-font-size: 11;" text="SEQ" />
+                  <TableColumn fx:id="dueDateCol" prefWidth="60.0" resizable="false" style="-fx-font-size: 11;" text="DUE" />
+                  <TableColumn fx:id="workOrderNumCol" prefWidth="50.0" resizable="false" style="-fx-font-size: 11;" text="WO #" />
+                  <TableColumn fx:id="macRefCol" prefWidth="125.0" resizable="false" style="-fx-font-size: 11;" text="MACOLA REFERENCE" />
+                  <TableColumn fx:id="qtyCol" prefWidth="45.0" resizable="false" style="-fx-font-size: 11;" text="QTY" />
+                  <TableColumn fx:id="finishedSkuCol" prefWidth="100.0" resizable="false" style="-fx-font-size: 11;" text="FINISHED SKU" />
+                  <TableColumn fx:id="itemDescCol" prefWidth="150.0" resizable="false" style="-fx-font-size: 11;" text="ITEM DESCRIPTION" />
+                  <TableColumn fx:id="rawSkuCol" prefWidth="75.0" resizable="false" style="-fx-font-size: 11;" text="RAW SKU" />
+                  <TableColumn fx:id="filmSkuCol" prefWidth="75.0" resizable="false" style="-fx-font-size: 11;" text="FILM SKU" />
+                  <TableColumn fx:id="faceCol" prefWidth="40.0" resizable="false" style="-fx-font-size: 11;" text="FACES" />
+                  <TableColumn fx:id="numOfUnitsCol" prefWidth="50.0" resizable="false" style="-fx-font-size: 11;" text="# UNITS" />
+                  <TableColumn fx:id="pieceCountCol" prefWidth="40.0" resizable="false" style="-fx-font-size: 11;" text="PC CT" />
               </columns>
                <VBox.margin>
                   <Insets />
