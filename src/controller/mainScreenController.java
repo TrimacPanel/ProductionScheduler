@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import model.OpenWorkOrder;
 import model.ProductionSchedule;
@@ -64,12 +65,14 @@ public class mainScreenController {
 
     @FXML
     void onActionRefreshButton(ActionEvent event) {
-        //TODO Refresh Button
+        ProductionSchedule.refreshProductionScheduleData();
      }
 
     @FXML
     void onKeyPressRefreshButton(KeyEvent event) {
-        //TODO hotkeyToRefreshButton
+        if (event.getCode() == KeyCode.F5) {
+            ProductionSchedule.refreshProductionScheduleData();
+        }
     }
 
 }
