@@ -11,12 +11,11 @@ public class WorkOrder {
     private String itemDesc;
     private String subSKU;
     private String filmSKU;
-    private int faces;
-    private int numOfUnits;
-    private int pieceCount;
+    private int unitSize;
+    private String salesOrder;
 
     WorkOrder(Date dueDate, int workOrderNumber, String macolaReference, int quantity, String finishedSKU, String itemDescription,
-              String substrateSKU, String filmSKU, int numberOfFaces, int numberOfUnits, int pieceCount){
+              String substrateSKU, String filmSKU, int unitSize, String salesOrder) {
         this.dueDate = dueDate;
         this.ID = workOrderNumber;
         this.macolaRef = macolaReference;
@@ -25,9 +24,8 @@ public class WorkOrder {
         this.itemDesc = itemDescription;
         this.subSKU = substrateSKU;
         this.filmSKU = filmSKU;
-        this.faces = numberOfFaces;
-        this.numOfUnits = numberOfUnits;
-        this.pieceCount = pieceCount;
+        this.unitSize = unitSize;
+        this.salesOrder = salesOrder;
     }
 
     public Date getDueDate() {
@@ -94,27 +92,19 @@ public class WorkOrder {
         this.filmSKU = filmSKU;
     }
 
-    public int getFaces() {
-        return faces;
+    public int getUnitSize() {
+        return unitSize;
     }
 
-    public void setFaces(int faces) {
-        this.faces = faces;
+    public void setUnitSize(int unitSize) {
+        this.unitSize = unitSize;
     }
 
-    public int getNumOfUnits() {
-        return numOfUnits;
+    public String getSalesOrder() {
+        return salesOrder;
     }
 
-    public void setNumOfUnits(int numOfUnits) {
-        this.numOfUnits = numOfUnits;
-    }
-
-    public int getPieceCount() {
-        return pieceCount;
-    }
-
-    public void setPieceCount(int pieceCount) {
-        this.pieceCount = pieceCount;
+    public void setSalesOrder(String salesOrder) {
+        this.salesOrder = salesOrder;
     }
 }

@@ -73,9 +73,8 @@
                   <TableColumn fx:id="itemDescCol" prefWidth="150.0" resizable="false" style="-fx-font-size: 11;" text="ITEM DESCRIPTION" />
                   <TableColumn fx:id="rawSkuCol" prefWidth="75.0" resizable="false" style="-fx-font-size: 11;" text="RAW SKU" />
                   <TableColumn fx:id="filmSkuCol" prefWidth="75.0" resizable="false" style="-fx-font-size: 11;" text="FILM SKU" />
-                  <TableColumn fx:id="faceCol" prefWidth="40.0" resizable="false" style="-fx-font-size: 11;" text="FACES" />
-                  <TableColumn fx:id="numOfUnitsCol" prefWidth="50.0" resizable="false" style="-fx-font-size: 11;" text="# UNITS" />
-                  <TableColumn fx:id="pieceCountCol" prefWidth="40.0" resizable="false" style="-fx-font-size: 11;" text="PC CT" />
+                  <TableColumn fx:id="unitSizeCol" prefWidth="75.0" resizable="false" style="-fx-font-size: 11;" text="UNIT SIZE" />
+                  <TableColumn fx:id="salesOrderCol" prefWidth="75.0" resizable="false" style="-fx-font-size: 11;" text="SALES ORDER" />
               </columns>
                <VBox.margin>
                   <Insets />

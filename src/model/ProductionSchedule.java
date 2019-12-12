@@ -42,7 +42,9 @@ public class ProductionSchedule {
      */
     private static ObservableList<OpenWorkOrder> compareMacolaWithProductionScheduleData(ObservableList<WorkOrder> macolaData, ObservableList<OpenWorkOrder> productionScheduleData){
         //TODO: compare Production Schedule Data with Macola Data
-        return null;
+
+
+        return null; //Return Open Work Objects that contain all the data from both
     }
 
     /*
@@ -50,8 +52,53 @@ public class ProductionSchedule {
     custom fields and then loads that data in to OpenWorkOrder objects.
      */
     private static ObservableList<OpenWorkOrder> retrieveProductionScheduleData(){
-        //TODO: write code necessary to access the saved production schedule data
-        return null;
+                /*
+        config.properties looks like this:
+        db.url=Your url
+        db.dbName=Your database name
+        db.user=Your username
+        db.password=Your password
+         */
+
+        String url = "";
+        String dbName = "";
+        String user = "";
+        String password = "";
+
+        Properties prop = new Properties();
+        try (InputStream input = new FileInputStream("src/resources/productionscheduleconfig.properties")){
+            prop.load(input);
+            url = prop.getProperty("db.url");
+            dbName = prop.getProperty("db.dbName");
+            user = prop.getProperty("db.user");
+            password = prop.getProperty("db.password");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+        String connectionUrl = "jdbc:sqlserver://" + url + ";databaseName=" + dbName + ";user=" + user + ";password=" + password;
+        ResultSet rs = null;
+        ObservableList<OpenWorkOrder> productionScheduleData = FXCollections.observableArrayList();
+
+        try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
+            String SQL = "SELECT * FROM [ProductionSchedule].[dbo].[Open_Work_Orders];";
+            rs = stmt.executeQuery(SQL);
+
+            while(rs.next()){
+                //Load Macola Data into Work Order object for processing
+                productionScheduleData.add(new OpenWorkOrder(rs.getDate("scheduled_date"),
+                        rs.getString("production_line"), rs.getString("work_shift"),
+                        rs.getInt("priority"), null, rs.getInt("work_order_num"),
+                        null, 0, null, null,
+                        null, null, 0, null));
+            }
+        }
+        // Handle any errors that may have occurred.
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return productionScheduleData;
     }
 
     /*
@@ -72,7 +119,7 @@ public class ProductionSchedule {
         String password = "";
 
         Properties prop = new Properties();
-        try (InputStream input = new FileInputStream("src/resources/config.properties")){
+        try (InputStream input = new FileInputStream("src/resources/macolaconfig.properties")){
             prop.load(input);
             url = prop.getProperty("db.url");
             dbName = prop.getProperty("db.dbName");
@@ -91,15 +138,13 @@ public class ProductionSchedule {
             rs = stmt.executeQuery(SQL);
 
             while(rs.next()){
-                //TODO: May need to trim some of the strings
-                //TODO: Will fail to compile because we're missing some data from the view that we're pulling data from
+                //TODO: Need to trim some of the strings
                 //Load Macola Data into Work Order object for processing
                 macolaData.add(new WorkOrder(rs.getDate("due_dt"), rs.getInt("ord_no"),
-                        rs.getString("macolaRef"), rs.getInt("ord_qty"),
-                        rs.getString("item_no"), rs.getString("item_desc_1"),
-                        rs.getString("sub_item"), rs.getString("ovly_item"),
-                        rs.getInt("faces"), rs.getInt("numofunits"),
-                        rs.getInt("pieceCount")));
+                        rs.getString("cus_name").trim(), rs.getInt("ord_qty"),
+                        rs.getString("item_no").trim(), rs.getString("item_desc_1").trim(),
+                        rs.getString("sub_item").trim(), rs.getString("ovly_item").trim(),
+                        rs.getInt("unit_size"), rs.getString("user_def_fld_2").trim()));
             }
         }
         // Handle any errors that may have occurred.

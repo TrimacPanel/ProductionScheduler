@@ -11,9 +11,9 @@ public class OpenWorkOrder extends WorkOrder{
 
     OpenWorkOrder(Date scheduledDate, String assignedProductionLine, String assignedWorkShift, int prioritySequence,
                   Date dueDate, int workOrderNumber, String macolaReference, int quantity, String finishedSKU, String itemDescription,
-                  String substrateSKU, String filmSKU, int numberOfFaces, int numberOfUnits, int pieceCount){
+                  String substrateSKU, String filmSKU, int unitSize, String salesOrder){
         super(dueDate, workOrderNumber, macolaReference, quantity, finishedSKU, itemDescription, substrateSKU, filmSKU,
-                numberOfFaces, numberOfUnits, pieceCount);
+                unitSize, salesOrder);
 
         schDate = scheduledDate;
         prodLine = assignedProductionLine;

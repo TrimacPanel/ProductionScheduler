@@ -49,14 +49,12 @@ public class mainScreenController {
     @FXML
     private TableColumn<OpenWorkOrder, String> filmSkuCol;
 
-    @FXML
-    private TableColumn<OpenWorkOrder, Integer> faceCol;
 
     @FXML
-    private TableColumn<OpenWorkOrder, Integer> numOfUnitsCol;
+    private TableColumn<OpenWorkOrder, Integer> unitSizeCol;
 
     @FXML
-    private TableColumn<OpenWorkOrder, Integer> pieceCountCol;
+    private TableColumn<OpenWorkOrder, Integer> salesOrderCol;
 
     @FXML
     void onActionFileMenuClose(ActionEvent event) {
